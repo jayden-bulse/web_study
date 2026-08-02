@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS选择器</title>
+    <style>
+        /* 元素选择器 */
+      h2 {
+        color: aqua;
+      }
+      /* id选择器 */
+      #idC{
+        color:red;
+      }
+      /* 类选择器 */
+      .h4_class{
+        font-size:28px;
+        color:green;
+        background-color: lightblue;
+      }
+      /* 通用选择器--选择所有元素 */
+      *{
+        font-family: 'SongTi';
+      }
+      /* 子代选择器示例 */
+      .father>.son{
+        color:pink;
+        font-size:25px;
+      }
+      /* 后代选择器示例 */
+      .father p{
+        background-color: palegreen;
+        color:red;
+        font-size:large;
+      }
+      /* 相邻兄弟选择器示例 */
+      .nBroC+p{
+        color:aquamarine;
+        font-size:20px;
+      }
+      /* 伪类选择器示例 */
+      #FakeClass:hover{
+        color:green;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>这是选择器示例</h1>
+    <h2>这是元素选择器示例</h2>
+    <h3 id="idC">这是id选择器示例</h3>
+    <h4 class="h4_class">这是类选择器示例</h4>
+    <div class="father">
+        <p class="son">子代选择器示例</p>
+        <div>
+            <p class = "grandson">后代选择器示例</p>
+        </div>
+    </div>
+    <p>这是一个p标签</p>
+    <div class="nBroC">这是一个相邻兄弟选择器示例</div>
+    <p>这是一个p标签</p>
+
+    <div id="FakeClass">伪类选择器示例,hover时字体会变大变绿</div>
+  </body>
+</html>

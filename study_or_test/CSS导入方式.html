@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- css有三种导入方式
+    1.内联样式：直接在html标签里通过style创建样式
+    2.内部样式：在html文件里通过style标签来创建样式（style标签在title里）
+    3.外部样式：创建外部文件，在html文件里使用外部css文件里创建的样式 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS样式导入方式</title>
+    <style>
+        .blue_color{
+            color:blue;
+            font-size:20px;
+        }
+        h1{
+            color:aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="../css_file/style.css">
+</head>
+<body>
+    <h1 style="color:red;">我是一级标题,采用了内联样式</h1>
+    <p class ="blue_color">采用内部样式的p标签</p>
+    <p class="p_style">采用了外部标签样式的p标签</p>
+</body>
+</html>

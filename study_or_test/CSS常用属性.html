@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS常用属性</title>
+    <style>
+        /* css里常用的元素模型有
+            1 block--块级元素。
+            2 inline--行内元素。（行内元素不能设置宽高）
+            3 inline-block--行内块级元素。（这个元素相当于可以设置宽高的行内元素）
+        */
+        .block{
+            color:red;
+            background-color: aquamarine;
+            width: 150px;
+            height:100px;
+        }
+        .inline{
+            background-color: lightpink;
+        }
+        .inline-block{
+            width:100px;
+            height:100px;
+        }
+        .div-inline-block{
+            display:inline-block;
+            background-color: aqua;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font:bolder 50px KaiTi">这是一个font复合属性示例</h1>
+    <div style="font:bolder 30px KaiTi">这是另一个font复合属性示例</div>
+    <p style="line-height: 30px;">这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本</p>
+    <div class ="block">这是一个块级元素</div>
+    <span class="inline">这是一个行内元素</span>
+    <img src="./downloaded-image.jpg" alt="" class="inline-block">
+    <img src="./downloaded-image.jpg" alt="" class="inline-block">
+    <img src="./downloaded-image.jpg" alt="" class="inline-block">
+    <div class="div-inline-block">这个转换成了行内块级元素</div>
+    <span style="display:block;width:300px;color:blue;background-color: aquamarine;">span转换成了行内块级元素</span>
+
+</body>
+</html>
